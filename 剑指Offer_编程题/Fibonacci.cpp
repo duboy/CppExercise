@@ -5,11 +5,11 @@ using namespace std;
 class Solution {
 public:
     int Fibonacci(int n) {
-    int temp = 0, fib_0 = 0, fib_1 = 1;
     if (n == 0)
         return 0;
     else if (n == 1)
         return 1;
+    int temp = 0, fib_0 = 0, fib_1 = 1;
     while (--n)
     {
         temp = fib_1;
