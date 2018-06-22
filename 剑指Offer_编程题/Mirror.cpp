@@ -3,7 +3,6 @@
 #include <stack>
 using namespace std;
 
-
 struct TreeNode {
 	int val;
 	struct TreeNode *left;
@@ -12,49 +11,47 @@ struct TreeNode {
 			val(x), left(NULL), right(NULL) {
 	}
 };
-class Solution 
-{
+class Solution {
 public:
-    bool HasSSubtree(TreeNode* pRoot1, TreeNode* pRoot2)
-    {
-		if (pRoot2 == nullptr)
-			return true;
-		if (pRoot1 == nullptr)
-			return false;
-		// if(pRoot1->val == pRoot2->val)
-			// return true;
-		
-		if(pRoot1->val != pRoot2->val)
-		{
-			return false;
-		}
+    void Mirror(TreeNode *pRoot) 
+	{
+		TreeNode *temp;
+		if (!pRoot)
+			return;
+		if (!pRoot->left && !pRoot->right)
+			return;
 		else
 		{
-			// if (HasSSubtree(pRoot1->left, pRoot2->left))
-				return HasSSubtree(pRoot1->right, pRoot2->right) && HasSSubtree(pRoot1->left, pRoot2->left);
-			// else
-				// return  false;
+		temp = pRoot->left;
+			pRoot->left = pRoot->right;
+			pRoot->right = temp;
+			Mirror(pRoot->left);
+			Mirror(pRoot->right);
 		}
     }
-	
-	bool HasSubtree(TreeNode* pRoot1, TreeNode* pRoot2)
+
+	bool isLeaf(TreeNode *pRoot)
 	{
-		bool result = false;
-		if (pRoot1 != nullptr && pRoot2 != nullptr)
+		if (!pRoot->left && !pRoot->right )
 		{
-			if (pRoot1->val == pRoot2->val)
-			{
-				result = HasSSubtree(pRoot1, pRoot2);
-			}
-			if(!result)
-				result = HasSubtree(pRoot1->left, pRoot2);
-			if(!result)
-				result = HasSubtree(pRoot1->right, pRoot2);
+			return true;
 		}
-		
-		return result;
+		else
+			return false;
 	}
 };
+
+void printTree(TreeNode *pRoot)
+{
+	if (!pRoot)
+		return;
+	else
+	{
+		cout << pRoot->val << " ";
+		printTree(pRoot->left);
+		printTree(pRoot->right);
+	}
+}
 
 int main()
 {
@@ -87,5 +84,10 @@ int main()
 	
 	Solution sol;
 	//cout << sol.HasSSubtree(&a2, &b1);
-	cout << sol.HasSubtree(pRoot1, pRoot2);
+	printTree(pRoot1);
+	sol.Mirror(&a1);
+	sol.Mirror(pRoot1);
+	// cout << endl << sol.isLeaf(&a5) << endl;
+	cout <<endl;
+	printTree(&a1);
 }
