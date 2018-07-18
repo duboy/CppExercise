@@ -1,3 +1,5 @@
-﻿  FindFirstCommonNode.cpp
-  aimToOffer.vcxproj -> C:\Users\DuBoy\Documents\GitHub\NOWCODER\aimToOffer\aimToOffer\Debug\aimToOffer.exe
-  aimToOffer.vcxproj -> C:\Users\DuBoy\Documents\GitHub\NOWCODER\aimToOffer\aimToOffer\Debug\aimToOffer.pdb (Full PDB)
+﻿cl : 命令行 warning D9028: 最小重新生成失败，正在转换为标准生成
+  GetNumberOfK2.cpp
+c:\users\duboy-jinghui\documents\github\nowcoder\aimtooffer\getnumberofk2.cpp(21): warning C4018: “<”: 有符号/无符号不匹配
+  aimToOffer.vcxproj -> C:\Users\DuBoy-Jinghui\Documents\GitHub\NOWCODER\aimToOffer\aimToOffer\Debug\aimToOffer.exe
+  aimToOffer.vcxproj -> C:\Users\DuBoy-Jinghui\Documents\GitHub\NOWCODER\aimToOffer\aimToOffer\Debug\aimToOffer.pdb (Full PDB)

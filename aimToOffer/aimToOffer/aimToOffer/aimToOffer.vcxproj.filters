@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\FindFirstCommonNode.cpp">
+    <ClCompile Include="..\..\GetNumberOfK2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
