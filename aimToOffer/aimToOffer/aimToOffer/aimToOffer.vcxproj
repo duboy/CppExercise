@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\GetNumberOfK2.cpp" />
+    <ClCompile Include="..\..\IsBalanced_Solution.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{42E653B7-AFB3-4DA3-B5DC-FAAE829A1E6D}</ProjectGuid>
