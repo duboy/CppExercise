@@ -10,6 +10,7 @@ using namespace std;
 
 class Solution {
 public:
+	int a;
     int GetNumberOfK(vector<int> data ,int k) 
 	{
 		int start = 0, end, firstK;
