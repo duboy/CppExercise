@@ -335,12 +335,4 @@ __pycache__/
 *.qmake.stash
 
 # vs project file
-Self-Test.pro.user
-Self-Test.sdf
-Self-Test.sln
-Self-Test.suo
-Self-Test.VC.db
-Self-Test.VC.VC.opendb
-Self-Test.vcxproj
-Self-Test.vcxproj.filters
-Self-Test.vcxproj.user
+test.*
