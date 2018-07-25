@@ -336,3 +336,5 @@ __pycache__/
 
 # vs project file
 test.*
+*.obj
+*.exe
