@@ -335,6 +335,5 @@ __pycache__/
 *.qmake.stash
 
 # vs project file
-test.*
 *.obj
 *.exe
