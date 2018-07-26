@@ -39,10 +39,23 @@ public:
 	}
 };
 
-
 void flip(const Widget &widget) { widget.flip(); }
 
-int main(){
+class X { public: int i; };
+class A : public virtual X { public: int j; };
+class B : public virtual X { public: double d; };
+class C : public A, public B { public: int K; };
+
+void foo( A* pa)
+{
+	pa->i = 1024;
+}
+
+int main()
+{
+	C c;
+	foo(new A);
+	foo(new C);
 
 	Bell b;
 	Whistle w;
