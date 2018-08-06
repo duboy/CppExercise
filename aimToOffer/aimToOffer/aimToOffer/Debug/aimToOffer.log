@@ -1,7 +1,2 @@
-﻿  test.cpp
-c:\users\duboy\documents\github\nowcoder\aimtooffer\test.cpp(43): error C2662: “void Widget::flip(void)”: 不能将“this”指针从“const Widget”转换为“Widget &”
-  c:\users\duboy\documents\github\nowcoder\aimtooffer\test.cpp(43): note: 转换丢失限定符
-c:\users\duboy\documents\github\nowcoder\aimtooffer\test.cpp(52): error C2664: “void flip(const Widget *)”: 无法将参数 1 从“Bell”转换为“const Widget *”
-  c:\users\duboy\documents\github\nowcoder\aimtooffer\test.cpp(52): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
-c:\users\duboy\documents\github\nowcoder\aimtooffer\test.cpp(53): error C2664: “void flip(const Widget *)”: 无法将参数 1 从“Whistle”转换为“const Widget *”
-  c:\users\duboy\documents\github\nowcoder\aimtooffer\test.cpp(53): note: 没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+﻿  aimToOffer.vcxproj -> C:\Users\DuBoy-Jinghui\Documents\GitHub\NOWCODER\aimToOffer\aimToOffer\Debug\aimToOffer.exe
+  aimToOffer.vcxproj -> C:\Users\DuBoy-Jinghui\Documents\GitHub\NOWCODER\aimToOffer\aimToOffer\Debug\aimToOffer.pdb (Full PDB)
