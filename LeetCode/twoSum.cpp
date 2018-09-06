@@ -21,6 +21,23 @@ public:
     }
 };
 
+class Solution_1 {
+public:
+	vector<int> twoSum(vector<int>& nums, int target) {
+		multimap<int, int> imap;
+		int i = 0;
+		for (const auto num : nums)
+			imap.insert(make_pair(num, i++));
+
+		for (const auto num : nums)
+		{
+			if ((--imap.upper_bound(target - num))->second != 0)
+				return{ imap.find(num)->second, (--imap.upper_bound(target - num))->second };
+		}
+		return{ 1, 2 };
+	}
+};
+
 void printVec(const vector<int> &nums)
 {
 	for (auto i : nums)
@@ -29,9 +46,9 @@ void printVec(const vector<int> &nums)
 
 int main()
 {
-	Solution sol;
-	vector<int> ivec = { 3, 2, 4 };
-	auto resl = sol.twoSum(ivec, 6);
+	Solution_1 sol;
+	vector<int> ivec = { 2,5,5,11 };
+	auto resl = sol.twoSum(ivec, 10);
 
 	printVec(resl);
 }
